@@ -1,0 +1,23 @@
+{
+  "name": "JestCrashCourse",
+  "version": "1.0.0",
+  "description": "Following https://www.youtube.com/watch?v=7r4xVDI2vho",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachelBurke/JestCrashCourse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachelBurke/JestCrashCourse/issues"
+  },
+  "homepage": "https://github.com/RachelBurke/JestCrashCourse#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
