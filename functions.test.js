@@ -48,10 +48,22 @@ test("Should be under 1600", () => {
 });
 
 // Regex (regular expressions)
+    // Remember - Case sensitive
 test("There is no I in team", () => {
-  expect("team").not.toMatch("/I/i");
+  expect("team").not.toMatch(/I/i);
 });
 
 test("There is I in team", () => {
-  expect("teami").not.toMatch("/I/i");
+  expect("teami").toMatch(/I/i);
 });
+
+// Arrays
+test("Admin should be in usernames", () => {
+  usernames = ["John", "Karen", "Admin"];
+  expect(usernames).toContain("Admin");
+})
+
+test("Admin should be in usernames", () => {
+  usernames = ["John", "Karen", "Rachel"];
+  expect(usernames).not.toContain("Admin");
+})
