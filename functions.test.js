@@ -1,5 +1,31 @@
 const functions = require("./functions");
 
+//beforeEach(() => initDatabase());
+//afterEach(() => closeDatabase());
+
+//beforeAll(() => initDatabase());
+//afterAll(() => closeDatabase());
+
+//Life cycle methods - to run before or after tests
+//const initDatabase = () => console.log("Database initalized...");
+// closeDatabase = () => console.log("Database closed...");
+
+const nameCheck = () => console.log("Checking Name...");
+
+describe("Checking Names", () => {
+  beforeEach(() => nameCheck());
+
+  test("User is Rachel", () => {
+    const user = "Rachel";
+    expect(user).toBe("Rachel");
+  })
+
+    test("User is Karen", () => {
+    const user = "Karen";
+    expect(user).toBe("Karen");
+  })
+});
+
 // toBe
 test("Adds 2 + 2 to equal 4", () => {
   expect(functions.add(2, 2)).toBe(4);
